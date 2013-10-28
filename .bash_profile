@@ -37,3 +37,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/alex/.gvm/bin/gvm-init.sh" ]] && source "/Users/alex/.gvm/bin/gvm-init.sh"
