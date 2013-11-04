@@ -1,4 +1,3 @@
-# Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
 
 # Load the shell dotfiles, and then some:

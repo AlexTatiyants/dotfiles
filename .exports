@@ -23,3 +23,18 @@ export GREP_OPTIONS="--color=auto"
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+
+ORACLE_HOME=/bin/oracle/instantclient_11_2
+export ORACLE_HOME
+
+DYLD_LIBRARY_PATH=/bin/oracle/instantclient_11_2
+TNS_ADMIN=/bin/oracle/instantclient_11_2
+PATH=$PATH:/bin/oracle/instantclient_11_2
+SQLPATH=/bin/oracle/instantclient_11_2
+
+export DYLD_LIBRARY_PATH
+export TNS_ADMIN
+export PATH
+export CLASSPATH
+export SQLPATH 
