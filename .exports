@@ -24,4 +24,4 @@ export GREP_OPTIONS="--color=auto"
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-export PATH="/Applications/DevTools/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/Applications/DevTools/Postgres.app/Contents/MacOS/bin:/~/.gem/ruby/2.0.0:$PATH"
