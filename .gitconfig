@@ -1,6 +1,7 @@
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 10
 	# View the current working tree status using the short format
 	s = status -s
 	#View status (long form)
@@ -11,6 +12,8 @@
 	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
+	# git pull with rebase 
+	r = pull --rebase
 	# Clone a repository including all submodules
 	c = clone --recursive
 	# Commit all changes
@@ -26,7 +29,7 @@
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# unstage a file
-	x = reset HEAD
+	x = reset HEAD	
 
 [apply]
 	# Detect whitespace errors when applying a patch
