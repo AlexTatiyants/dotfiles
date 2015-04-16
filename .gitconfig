@@ -1,7 +1,10 @@
 [alias]
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	# View abbreviated SHA, description, and history graph
 	lf = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	# View abbreviated SHA, description, and history graph of the last 10 commits
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -n 10
+	# View my commits from yesterday
+	lmy = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --author=Tatiyants --after=yesterday
 	# View the current working tree status using the short format
 	s = status -s
 	#View status (long form)
@@ -14,6 +17,7 @@
 	p = !"git pull; git submodule foreach git pull origin master"
 	# git pull with rebase 
 	r = pull --rebase
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 	# Clone a repository including all submodules
 	c = clone --recursive
 	# Commit all changes
@@ -22,8 +26,10 @@
     # save in progress work
     save = !git add -A && git commit -m 'SAVEPOINT'
     wip = !git add -u && git commit -m "WIP" 
-	# Switch to a branch, creating it if necessary
-	go = checkout -b
+    # make new branch
+    make = checkout -b
+	# Switch to a branch
+	go = checkout
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
@@ -34,7 +40,6 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# unstage a file
 	x = reset HEAD	
-    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
     undo = reset HEAD~1 --mixed
     amend = commit -a --amend
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
@@ -95,3 +100,7 @@
 
 [push]
 	default = matching
+
+[user]
+	name = Alex Tatiyants
+	email = atatiyan@gmail.com
