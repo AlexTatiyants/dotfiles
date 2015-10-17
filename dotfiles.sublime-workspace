@@ -68,20 +68,21 @@
 	"buffers":
 	[
 		{
-			"file": ".gitconfig",
+			"contents": "cchuen@memorialcare.org\nBXVU5hc6Sca3VR8b\n\n\naarguija@memorialcare.org\ngk5UXDJ4iW6GJ2yS",
 			"settings":
 			{
-				"buffer_size": 3746,
-				"line_ending": "Unix"
+				"buffer_size": 85,
+				"line_ending": "Unix",
+				"name": "cchuen@memorialcare.org"
 			}
 		},
 		{
-			"contents": "ssh -v -L 7732:qa-db93.stansonhealth.com:5432 alex.tatiyants@ec2-52-5-195-76.compute-1.amazonaws.com",
+			"contents": "Investment Executive Summary\n\nDescribe the unique value proposition of Stanson CDS\n-roots from Zynx\n-relationship with C-S\n-how our CDS works\n-Content capability\n-Alert analytics features and benefits\n\n\nWhat is driving the market for Stanson's approach to CDS\n-move from fee for service to value based payments\n-interest in improving quality\n-interest in choosing wisely\n-regulatory drivers tied to revenue like PQRS, Medicare Advantage Star, PAMA imaging CDS mandate\n\nGo To Market Strategy\n-how large is the market\n-competition\n-direct sales\n-channel partner strategy\n-current clients and sales pipeline\n\nFinancial Projections\n\nUse of proceeds\n-sales and marketing\n-future content\n-product development including Cerner, Meditech, and CDSaaS cloud and Smart on FHIR development\n\nSummary, why invest in Stanson",
 			"settings":
 			{
-				"buffer_size": 100,
+				"buffer_size": 809,
 				"line_ending": "Unix",
-				"name": "ssh -v -L 7732:qa-db93.stansonhealth.com:5432 alex"
+				"name": "Investment Executive Summary"
 			}
 		}
 	],
@@ -126,11 +127,17 @@
 	],
 	"file_history":
 	[
+		"/Users/alex/data/cedars-expanded-cds-alerts-30-days.dat",
+		"/Users/alex/dev/dotfiles/.exports",
+		"/Users/alex/dev/stanson/target/work/clover/db/clover.db1ad3zlc01y896_4_ko5edu_i91d1wy7.s",
+		"/Users/alex/Google Drive/marketing/presentations/Stanson 2015.thmx",
+		"/Users/alex/dev/dotfiles/.gitconfig",
+		"/Users/alex/.pgpass",
+		"/Users/alex/dev/stanson/grails-app/assets/javascripts/controllers/help/savings-methodology-controller.js",
 		"/Users/alex/dev/backups/stanson-cms-last.backup",
 		"/Users/alex/dev/stanson-cms/cms-data-and-schema-2015-01-30",
 		"/Users/alex/Downloads/lgl_crit.xml",
 		"/Users/alex/dev/blog/Vagrantfile",
-		"/Users/alex/dev/dotfiles/.gitconfig",
 		"/Users/alex/Downloads/tatiyantscom.wordpress.2014-12-25.xml",
 		"/Users/alex/Google Drive/Shared/Mapping/Cedars/extracts/locators.dat",
 		"/Users/alex/dev/wiki/cms/intervention-editor.md",
@@ -162,7 +169,6 @@
 		"/Users/alex/dev/provisioning/roles/sftp/templates/stage-all-cedars.sql",
 		"/Users/alex/data/stanson-demo2/alert-actions.dat",
 		"/Users/alex/dev/dotfiles/.bash_prompt",
-		"/Users/alex/dev/dotfiles/.exports",
 		"/Users/alex/dev/dotfiles/.bash_profile",
 		"/Users/alex/data/memorial-care/provider-specialties.dat",
 		"/Users/alex/data/memorial-care/extract-alert-triggers-02-06-2014.csv",
@@ -261,6 +267,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"localhost",
+			"localhost:5432:stanson_dev:stanson:password\n",
 			"	object.predicate.each {\n		processObject(object, it)\n	}\n",
 			"N32880",
 			"110204",
@@ -329,28 +337,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": ".gitconfig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3746,
+						"buffer_size": 85,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3745,
-								3745
+								85,
+								69
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "cchuen@memorialcare.org",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 737.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -361,20 +368,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 809,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								100
+								809,
+								809
 							]
 						],
 						"settings":
 						{
-							"auto_name": "ssh -v -L 7732:qa-db93.stansonhealth.com:5432 alex",
+							"auto_name": "Investment Executive Summary",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -463,8 +470,8 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 177.0,
+	"side_bar_visible": false,
+	"side_bar_width": 184.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
