@@ -17,6 +17,7 @@ alias h="history"
 alias j="jobs"
 alias web="python -m SimpleHTTPServer 8000"
 alias gw="gradlew"
+alias gr="grails"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
